@@ -26,7 +26,7 @@ namespace task2
             }
             else
             {
-                return true;
+                return false;
             }
         }
         public static string Read()//создаем функцию, чтобы прочесть числа из файла
@@ -42,9 +42,10 @@ namespace task2
             string s = Read();
             string[] arr = s.Split();//выводим все простые числа в другом файле
             StreamWriter sw = new StreamWriter("output.txt");
-            for(int i = 0; i< arr.Lenght; i++)
+            for(int i = 0; i< arr.Length; i++)
             {
-                if(Ex(int.Parse(arr[i])) == true)
+                int a = int.Parse(arr[i]);
+                if(Ex(a) == true)
                 {
                     sw.Write(arr[i] + " ");
                 }

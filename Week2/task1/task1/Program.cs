@@ -20,7 +20,6 @@ namespace task1
             }
             return true;
         }
-}
 
 public static string Ex1()//создаем функцию, которая читает строку из файла 
 {
@@ -34,7 +33,7 @@ public static string Ex1()//создаем функцию, которая чит
         static void Main(string[] args)
         {
               string s = Ex1();
-              StreamReader sw = new StreamWriter("output.txt");//выводим ответ в другом файле
+              StreamWriter sw = new StreamWriter("output.txt");//выводим ответ в другом файле
     if (Ex(s) == true)
     {
         sw.WriteLine("yes");
@@ -46,3 +45,4 @@ public static string Ex1()//создаем функцию, которая чит
         }
     }
 }
+
